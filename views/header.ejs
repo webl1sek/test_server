@@ -3,24 +3,34 @@
 <header class="header">
         <div class="header-container">
            <div class="wrapper">
-                <a id="sign-in">Sing In</a>
-                <div class="btn"></div>
+                <a id="username">Username</a>
+                <a id="sign-in">Log in</a>
            </div>
         </div>
     </header>
 
     <div class="modal-background">
         <div class="modal-login">
-            <span class="modal-close">&#10005;</span>
-            <form action="" method="post">
-                Enter login
-                <input type="login"> <br>
-                Enter password
-                <input type="password"> <br>
-                <input type="submit" value="Sign in">
-            </form>
+            <div class="wrap">
+                <form action="" method="post" class="login-form">
+                    <input type="text" placeholder="Enter login" class="input"> 
+                        <span class="login-validation input-validation"></span>
+                    <input type="password" placeholder="Enter password" class="input"> 
+                        <span class="password-validation input-validation"></span>
+                    <input type="submit" value="Sign in" class="input">
+                    <span class="modal-close">Close</span>
+                </form>
+                
+            </div>
         </div>
     </div>
 
 <link rel="stylesheet" href="/stylesheets/header.css">
 <script src="javascripts/header.js"></script>
+
+
+<!-- if (username) {
+   let signIn = document.getElementById('sign-in');
+   signIn.innerHTML = 'Log out'
+} -->
+
