@@ -51,14 +51,14 @@
     padding: 5px;
     border: 1px solid #888;
     max-width: 600px;
-/*     width: 60%; /* Could be more or less, depending on screen size */
- */}
+}
 
 .modal-close {
-    margin-top: 30px;
+    display: block;
+    margin: 0 auto;
     cursor: pointer;
-    padding-right: 10px;
     text-align: center;
+    
 }
 .wrap {
     margin-top: 15px;
