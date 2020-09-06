@@ -11,8 +11,26 @@ modalClose.onclick = function () {
     modalWindow.style.display = 'none';
 }
 
-let username;
+// Tabs switching
 
-if (username) {
-    signIn.innerHTML = username;
-} 
+let tab1 = document.getElementById('tab1');
+let tab2 = document.getElementById('tab2');
+
+let loginTab = document.getElementsByClassName('login')[0];
+let signinTab = document.getElementsByClassName('signup')[0];
+
+
+
+
+tab2.onclick = function() {
+    signinTab.style.display = "block";
+    loginTab.style.display = "none";
+}
+
+tab1.onclick = function() {
+    signinTab.style.display = "none";
+    loginTab.style.display = "block";
+}
+
+
+

@@ -12,13 +12,30 @@
     <div class="modal-background">
         <div class="modal-login">
             <div class="wrap">
-                <form action="" method="post" class="login-form">
-                    <input type="text" placeholder="Enter login" class="input"> 
-                        <span class="login-validation input-validation"></span>
-                    <input type="password" placeholder="Enter password" class="input"> 
-                        <span class="password-validation input-validation"></span>
-                    <input type="submit" value="Sign in" class="input">
-                </form>
+                <div class="tab">
+                    <button id="tab1" class="tablinks">Log in</button>
+                    <button id="tab2" class="tablinks">Sign up</button>
+                </div>
+                <div class="tabcontent login">
+                    <form action="/login" method="post" class="login-form">
+                        <input type="text" placeholder="Enter login" class="input"> 
+                            <span class="login-validation input-validation"></span>
+                        <input type="password" placeholder="Enter password" class="input"> 
+                            <span class="password-validation input-validation"></span>
+                        <input type="submit" value="Log in" class="input">
+                    </form>
+                </div>
+                <div class="tabcontent signup">
+                    <form action="/signup" method="post" class="login-form">
+                        <input type="text" placeholder="Enter login" class="input"> 
+                            <span class="login-validation input-validation"></span>
+                        <input type="password" placeholder="Enter password" class="input"> 
+                            <span class="password-validation input-validation"></span>
+                        <input type="password" placeholder="Re-enter password" class="input"> 
+                            <span class="password-validation input-validation"></span>
+                        <input type="submit" value="Sign up" class="input">
+                    </form>
+                </div>
             </div>
              <span class="modal-close">Close</span>
         </div>
