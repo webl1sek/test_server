@@ -13,27 +13,44 @@
         <div class="modal-login">
             <div class="wrap">
                 <div class="tab">
-                    <button id="tab1" class="tablinks">Log in</button>
+                    <button id="tab1" class="tablinks active">Log in</button>
                     <button id="tab2" class="tablinks">Sign up</button>
                 </div>
                 <div class="tabcontent login">
-                    <form action="/login" method="post" class="login-form">
-                        <input type="text" placeholder="Enter login" class="input"> 
-                            <span class="login-validation input-validation"></span>
-                        <input type="password" placeholder="Enter password" class="input"> 
-                            <span class="password-validation input-validation"></span>
-                        <input type="submit" value="Log in" class="input">
+                    <form action="" method="post" class="login-form">
+
+                        <input name="username" type="text" placeholder=" Enter login" class="input" maxlength="20" required>
+                        <span class="login-validation input-validation"></span>
+                
+                        <input name="password" type="password" placeholder=" Enter password" class="input" maxlength="60" minlength="8" required> 
+                        <span class="password-validation input-validation"></span>
+                                  
+                        <div class="g-recaptcha" data-sitekey="6LcDuMoZAAAAADNTFVA4Eno-U8K_1rFIP0M-d0Fz"></div>
+                        <br/>
+                
+                        <input type="submit" value="Sign up"  class="input">
+                       
                     </form>
                 </div>
                 <div class="tabcontent signup">
-                    <form action="/signup" method="post" class="login-form">
-                        <input type="text" placeholder="Enter login" class="input"> 
-                            <span class="login-validation input-validation"></span>
-                        <input type="password" placeholder="Enter password" class="input"> 
-                            <span class="password-validation input-validation"></span>
-                        <input type="password" placeholder="Re-enter password" class="input"> 
-                            <span class="password-validation input-validation"></span>
-                        <input type="submit" value="Sign up" class="input">
+                    
+                      
+                    <form action="" method="post" class="login-form">
+
+                        <input id="input-username" name="username" type="text" placeholder=" Enter login" class="input" maxlength="20" required>
+                        <span id="login-validation" class="login-validation input-validation"></span>
+                
+                        <input id="input-password" name="password" type="password" placeholder=" Enter password" class="input" maxlength="60" minlength="8" required> 
+                        <span id="password-validation" class="password-validation input-validation"></span>
+                
+                        <input name="first_name" type="text" placeholder=" Enter Name" class="input on_sign_up" maxlength="30" required> 
+                        <span class="login-validation input-validation on_sign_up"></span>
+                  
+                        <div class="g-recaptcha" data-sitekey="6LcDuMoZAAAAADNTFVA4Eno-U8K_1rFIP0M-d0Fz"></div>
+                        <br/>
+                
+                        <input type="submit" value="Login" class="input">
+                                   
                     </form>
                 </div>
             </div>
@@ -41,12 +58,9 @@
         </div>
     </div>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <link rel="stylesheet" href="/stylesheets/header.css">
 <script src="javascripts/header.js"></script>
 
 
-<!-- if (username) {
-   let signIn = document.getElementById('sign-in');
-   signIn.innerHTML = 'Log out'
-} -->
 
